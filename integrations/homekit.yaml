@@ -1,11 +1,10 @@
+name: Home Assistant Bridge
 filter:
   # Automatically expose all of the following types of devices.
   include_domains:
     - camera
-    - climate
-    - cover
-    - fan
-    - lock
+  exclude_domains:
+    - light
   # Since there are so many lights we don’t want, it’s easier to whitelist
   # them instead of trying to exclude the ones we don’t want.
   include_entities:
