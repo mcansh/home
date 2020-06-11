@@ -1,15 +1,31 @@
-# Configure a default setup of Home Assistant (frontend, api, etc)
-default_config:
+# General configuration
+homeassistant:
+  elevation: !secret home_elevation
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  name: !secret home_name
+  time_zone: America/New_York
+  unit_system: imperial
 
 # Base configuration
 automation: !include_dir_merge_list automations
-script: !include scripts.yaml
+config:
+discovery:
+frontend:
+history:
+ios:
+log_book:
+mobile_app:
+recorder:
+script: !include_dir_merge_named scripts
+sun:
+system_health:
+updater:
 
 # Integrations
 camera: !include integrations/camera.yaml
 ecobee: !include integrations/ecobee.yaml
+group: !include groups.yaml
 homekit: !include integrations/homekit.yaml
 light: !include integrations/light.yaml
-group: !include groups.yaml
-automation: !include automations.yaml
 scene: !include scenes.yaml
