@@ -1,16 +1,15 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
-# Text to speech
-tts:
-  - platform: google_translate
+# Base configuration
+automation: !include_dir_merge_list automations
+script: !include scripts.yaml
 
 # Integrations
 camera: !include integrations/camera.yaml
+ecobee: !include integrations/ecobee.yaml
 homekit: !include integrations/homekit.yaml
 light: !include integrations/light.yaml
-
 group: !include groups.yaml
 automation: !include automations.yaml
-script: !include scripts.yaml
 scene: !include scenes.yaml
