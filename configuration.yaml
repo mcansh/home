@@ -23,6 +23,7 @@ system_health:
 updater:
 
 # Integrations
+august: !include integrations/august.yaml
 camera: !include integrations/camera.yaml
 ecobee: !include integrations/ecobee.yaml
 group: !include groups.yaml
