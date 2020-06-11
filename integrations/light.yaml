@@ -1,0 +1,15 @@
+- platform: wiz_light
+  name: Dog Light
+  host: 10.0.154.249
+- platform: wiz_light
+  name: Post Lamp
+  host: 10.0.154.250
+- platform: wiz_light
+  name: Porch - By Door
+  host: 10.0.154.251
+- platform: wiz_light
+  name: Porch - Middle
+  host: 10.0.154.253
+- platform: wiz_light
+  name: Porch - Far
+  host: 10.0.154.254

@@ -1,0 +1,6 @@
+name: Cam Bridge
+entity_config:
+  camera.testcam:
+    video_codec: copy
+    audio_codec: copy
+    support_audio: True
