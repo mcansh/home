@@ -1,0 +1,13 @@
+name: Check Home Assistant config
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    container:
+      image: homeassistant/amd64-homeassistant
+    steps:
+      - uses: actions/checkout@v2
+      - name: Copy secrets
+        run: cp secrets_ci.yaml secrets.yaml
+      - name: Check config
+        run: hass --script check_config -c .
