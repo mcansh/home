@@ -2,10 +2,10 @@
   trigger:
     - platform: state
       entity_id: binary_sensor.updater
-      from: 'off'
-      to: 'on'
+      from: "off"
+      to: "on"
   action:
     - service: notify.notify
       data_template:
-        title: 'New Home Assistant Release'
+        title: "New Home Assistant Release"
         message: "Home Assistant {{ state_attr('binary_sensor.updater', 'newest_version') }} is now available!"
