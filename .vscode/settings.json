@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.yaml": "home-assistant",
+    ".github/**/*.yaml": "yaml"
+  },
+  "files.exclude": {
+    ".cloud": true,
+    "deps": true,
+    "*.conf": true,
+    "*.db": true,
+    "tts": true
+  }
+}
