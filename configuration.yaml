@@ -9,6 +9,7 @@ homeassistant:
 
 # Base configuration
 automation: !include_dir_merge_list automations
+cloud:
 config:
 discovery:
 frontend:
