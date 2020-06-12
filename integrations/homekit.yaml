@@ -18,4 +18,4 @@ entity_config:
   camera.driveway_cam:
     video_codec: copy
     audio_codec: copy
-    support_audio: True
+    support_audio: true
