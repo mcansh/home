@@ -31,3 +31,4 @@ group: !include groups.yaml
 homekit: !include integrations/homekit.yaml
 light: !include integrations/light.yaml
 scene: !include scenes.yaml
+rachio: !include integrations/rachio.yaml
