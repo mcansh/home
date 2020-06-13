@@ -3,16 +3,7 @@ filter:
   # Automatically expose all of the following types of devices.
   include_domains:
     - camera
-  exclude_domains:
     - light
-  # Since there are so many lights we don’t want, it’s easier to whitelist
-  # them instead of trying to exclude the ones we don’t want.
-  include_entities:
-    - light.dog_light
-    - light.post_lamp
-    - light.porch_by_door
-    - light.porch_middle
-    - light.porch_far
 
 entity_config:
   camera.driveway_cam:
