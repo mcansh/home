@@ -4,6 +4,7 @@ filter:
   include_domains:
     - camera
     - light
+    - climate
 
 entity_config:
   camera.driveway_cam:
