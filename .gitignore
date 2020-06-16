@@ -16,3 +16,4 @@ www/community
 *.pyc
 /appdaemon/compiled
 __pycache__
+OZW_Log.txt
