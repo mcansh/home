@@ -5,6 +5,12 @@ filter:
     - camera
     - light
     - climate
+    - lock
+  include_entities:
+    - binary_sensor.lil_bee_occupancy
+    - sensor.lil_bee_temperature
+    - sensor.my_ecobee_humidity
+    - binary_sensor.my_ecobee_occupancy
 
 entity_config:
   camera.driveway_cam:
