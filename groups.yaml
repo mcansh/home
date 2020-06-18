@@ -1,0 +1,12 @@
+sprinkers:
+  name: Sprinklers
+  icon: mdi:sprinkler-variant
+  entities:
+    - switch.front
+    - switch.front_yard_east
+    - switch.front_yard_west
+    - switch.backyard
+    - switch.backyard_2
+    - switch.back_yard_flower
+    - switch.back_yard_flower_2
+    - switch.backyard_center
