@@ -2,14 +2,7 @@
   trigger:
     - platform: state
       entity_id:
-        - switch.front
-        - switch.front_yard_east
-        - switch.front_yard_west
-        - switch.backyard
-        - switch.backyard_2
-        - switch.back_yard_flower
-        - switch.back_yard_flower_2
-        - switch.backyard_center
+        - group.sprinkers
       from: "off"
       to: "on"
   action:
@@ -22,14 +15,7 @@
   trigger:
     - platform: state
       entity_id:
-        - switch.front
-        - switch.front_yard_east
-        - switch.front_yard_west
-        - switch.backyard
-        - switch.backyard_2
-        - switch.back_yard_flower
-        - switch.back_yard_flower_2
-        - switch.backyard_center
+        - group.sprinkers
       from: "on"
       to: "off"
   action:
