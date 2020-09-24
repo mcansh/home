@@ -6,8 +6,7 @@
     service: light.turn_on
     entity_id: group.outdoor_lights
     data:
-      # 900 seconds = 15 minutes
-      transition: 900
+      transition: 0
       brightness: 40
       color_temp: 344
       rgb_color: 255, 255, 255
@@ -20,5 +19,4 @@
     service: light.turn_off
     entity_id: group.outdoor_lights
     data:
-      # 900 seconds = 15 minutes
-      transition: 900
+      transition: 0
