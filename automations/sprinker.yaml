@@ -1,0 +1,25 @@
+- alias: Sprinklers are on, turn on the pump
+  trigger:
+    - platform: state
+      entity_id:
+        - group.sprinkers
+      from: "off"
+      to: "on"
+  action:
+    - service: notify.notify
+      data_template:
+        title: "Sprinklers are on"
+        message: "Turn on the pump!"
+
+- alias: Sprinklers are off, turn off the pump
+  trigger:
+    - platform: state
+      entity_id:
+        - group.sprinkers
+      from: "on"
+      to: "off"
+  action:
+    - service: notify.notify
+      data_template:
+        title: "Sprinklers are off"
+        message: "Turn off the pump!"
