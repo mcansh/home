@@ -9,7 +9,6 @@
       transition: 0
       brightness: 40
       color_temp: 344
-      rgb_color: 255, 255, 255
 
 - alias: Turn off lights at sunrise
   trigger:
