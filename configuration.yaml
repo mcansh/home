@@ -31,4 +31,3 @@ homekit: !include integrations/homekit.yaml
 light: !include integrations/light.yaml
 scene: !include scenes.yaml
 rachio: !include integrations/rachio.yaml
-wiz: !include integrations/wiz.yaml
