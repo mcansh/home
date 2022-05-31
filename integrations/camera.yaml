@@ -1,9 +1,0 @@
-- platform: ffmpeg
-  name: Driveway Cam
-  input: -an -rtsp_transport tcp -i rtsp://logan:dQ8s47Uh8y@10.0.154.248/live
-  extra_arguments: -pred 1 -q:v 15 -r 15 -vf scale=960:540
-
-- platform: ffmpeg
-  name: Back Yard Cam
-  input: -an -rtsp_transport tcp -i rtsp://logan:dQ8s47Uh8y@10.0.154.247/live
-  extra_arguments: -pred 1 -q:v 15 -r 15 -vf scale=960:540
