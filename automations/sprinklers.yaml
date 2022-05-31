@@ -1,28 +1,28 @@
-- id: '1598820143839'
+- id: "1598820143839"
   alias: Turn on sprinkler pump when controller turns on
-  description: ''
+  description: ""
   trigger:
-  - entity_id: group.sprinkers
-    from: 'off'
-    platform: state
-    to: 'on'
+    - entity_id: group.sprinkers
+      from: "off"
+      platform: state
+      to: "on"
   condition: []
   action:
-  - data:
-      message: Turn on the pump!
-      title: Sprinklers are on
-    service: notify.mobile_app
-- id: '1598820318809'
+    - data:
+        message: Turn on the pump!
+        title: Sprinklers are on
+      service: notify.mobile_app
+- id: "1598820318809"
   alias: Turn off sprinkler pump when controller turns off
-  description: ''
+  description: ""
   trigger:
-  - entity_id: group.sprinkers
-    from: 'off'
-    platform: state
-    to: 'on'
+    - entity_id: group.sprinkers
+      from: "off"
+      platform: state
+      to: "on"
   condition: []
   action:
-  - data:
-      message: Turn off the pump!
-      title: Sprinklers are off
-    service: notify.mobile_app
+    - data:
+        message: Turn off the pump!
+        title: Sprinklers are off
+      service: notify.mobile_app
